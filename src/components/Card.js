@@ -13,9 +13,9 @@ export default function Card(card_details) {
     return (
         <div className="card">
             {badgeText && <div className="card--badge">{badgeText}</div>}
-            <img src={require("../images/"+card_details.image)} className="card--image" />
+            <img src={require("../images/"+card_details.image)} className="card--image" alt="" />
             <div className="card--stats">
-                <img src={require("../images/star.png")} className="card--star" />
+                <img src={require("../images/star.png")} className="card--star" alt="" />
                 <span>{card_details.rating}</span>
                 <span className="gray">({card_details.ratings}) • </span>
                 <span className="gray">{card_details.country}</span>
