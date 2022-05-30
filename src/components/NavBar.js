@@ -5,7 +5,7 @@ import "../style.css"
 export default function NavBar() {
     return (
         <nav>
-            <img src={airbnb_logo} className="nav--logo" alt=""/>
+            <img src={airbnb_logo} className="nav--logo" alt="Sorry!"/>
         </nav>
     )
 }
