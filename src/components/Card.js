@@ -10,10 +10,14 @@ export default function Card(card_details) {
         badgeText = "ONLINE"
     }
 
+    function onClickEventHandler() {
+        alert("click en el id:" + card_details.id);
+    }
+
     return (
-        <div className="card">
+        <div className="card"  onClick={onClickEventHandler}>
             {badgeText && <div className="card--badge">{badgeText}</div>}
-            <img src={require("../images/"+card_details.image)} className="card--image" alt="Sorry" />
+            <img src={require("../images/"+card_details.image)} className="card--image" alt="Sorry"/>
             <div className="card--stats">
                 <img src={require("../images/star.png")} className="card--star" alt="Sorry" />
                 <span>{card_details.rating}</span>
